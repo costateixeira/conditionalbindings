@@ -1,4 +1,6 @@
 Alias: SCT = http://snomed.info/sct
+Alias: $additional-bindings-profile-uc = http://hl7.org/fhir/test/StructureDefinition/additional-bindings-profile-uc
+Alias: $additional-bindings-profile-cs = http://hl7.org/fhir/test/StructureDefinition/additional-bindings-profile-cs
 
 
 Profile: MyReferral
@@ -15,8 +17,6 @@ Title: "Additional Bindings Profile"
 /// Extensions: ?
 //http://hl7.org/fhir/5.0/StructureDefinition/extension-ElementDefinition.binding.additional
 /// Aliases:
-//Alias: $additional-bindings-profile-uc = http://hl7.org/fhir/test/StructureDefinition/additional-bindings-profile-uc
-//Alias: $additional-bindings-profile-cs = http://hl7.org/fhir/test/StructureDefinition/additional-bindings-profile-cs
 
   
 
@@ -26,7 +26,7 @@ Title: "Additional Bindings Profile"
   * ^binding.extension[=].extension[+].url = "valueSet"
   * ^binding.extension[=].extension[=].valueCanonical = Canonical(VSA)
   * ^binding.extension[=].extension[+].url = "usage"
-  * ^binding.extension[=].extension[=].valueUsageContext.code = #ServiceRequest.code
+  * ^binding.extension[=].extension[=].valueUsageContext.code = $additional-bindings-profile-uc#ServiceRequest.code
   * ^binding.extension[=].extension[=].valueUsageContext.valueCodeableConcept = SCT#365176002
 
   * ^binding.extension[+].url = "http://hl7.org/fhir/tools/StructureDefinition/additional-binding"
@@ -35,7 +35,7 @@ Title: "Additional Bindings Profile"
   * ^binding.extension[=].extension[+].url = "valueSet"
   * ^binding.extension[=].extension[=].valueCanonical = Canonical(VSB)
   * ^binding.extension[=].extension[+].url = "usage"
-  * ^binding.extension[=].extension[=].valueUsageContext.code = #ServiceRequest.code
+  * ^binding.extension[=].extension[=].valueUsageContext.code = $additional-bindings-profile-uc#ServiceRequest.code
   * ^binding.extension[=].extension[=].valueUsageContext.valueCodeableConcept = SCT#364940007
 
 
