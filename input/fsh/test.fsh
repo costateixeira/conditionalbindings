@@ -1,27 +1,23 @@
 Alias: SCT = http://snomed.info/sct
 
 
-Alias: $additional-bindings-profile-uc = http://hl7.org/fhir/test/StructureDefinition/additional-bindings-profile-uc
-Alias: $additional-bindings-profile-cs = http://hl7.org/fhir/test/StructureDefinition/additional-bindings-profile-cs
-
 Profile: MyReferral
 Parent: ServiceRequest
 Id: MyReferral
 Title: "Additional Bindings Profile"
-//* ^url = "http://hl7.org/fhir/test/StructureDefinition/additional-bindings-profile-uc"
 * ^version = "1.0.0"
 * ^status = #draft
 * code from VS1
 * orderDetail
 
-/*
-  * ^binding.extension[+].url = "http://hl7.org/fhir/tools/StructureDefinition/additional-binding"
-  * ^binding.extension[+].extension[+].url = "purpose"
-  * ^binding.extension[+].extension[+].url = "valueSets"
-  * ^binding.extension[+].extension[+].url = "usage"
-  * ^binding.extension[+].extension[+].url = "purpose"
-*/
+
+///// Unused
+/// Extensions: ?
 //http://hl7.org/fhir/5.0/StructureDefinition/extension-ElementDefinition.binding.additional
+/// Aliases:
+//Alias: $additional-bindings-profile-uc = http://hl7.org/fhir/test/StructureDefinition/additional-bindings-profile-uc
+//Alias: $additional-bindings-profile-cs = http://hl7.org/fhir/test/StructureDefinition/additional-bindings-profile-cs
+
   
 
   * ^binding.extension[+].url = "http://hl7.org/fhir/tools/StructureDefinition/additional-binding"
