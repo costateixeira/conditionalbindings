@@ -1,5 +1,5 @@
 Alias: SCT = http://snomed.info/sct
-Alias: $additional-bindings-profile-uc = http://hl7.org/fhir/test/StructureDefinition/additional-bindings-profile-uc
+Alias: $additional-bindings-profile-uc = http://example.com/fhir/example/StructureDefinition/MyReferral
 Alias: $additional-bindings-profile-cs = http://hl7.org/fhir/test/StructureDefinition/additional-bindings-profile-cs
 
 
@@ -18,7 +18,6 @@ Title: "Additional Bindings Profile"
 //http://hl7.org/fhir/5.0/StructureDefinition/extension-ElementDefinition.binding.additional
 /// Aliases:
 
-  
 
   * ^binding.extension[+].url = "http://hl7.org/fhir/tools/StructureDefinition/additional-binding"
   * ^binding.extension[=].extension[+].url = "purpose"
@@ -71,7 +70,28 @@ Description: "Value Set B."
 * SCT#46669005  "Right handed (finding)"
 * SCT#23088002  "Ambidextrous (finding)"
 
-Instance: MyReferral1
+Instance: MyReferralOK1
+InstanceOf: MyReferral
+
+* status = #active
+* code = SCT#364940007
+* subject.display = "Patient1"
+* intent = #order
+* orderDetail[+] = SCT#23088002
+
+
+
+Instance: MyReferralOK2
+InstanceOf: MyReferral
+
+* status = #active
+* code = SCT#365176002
+* subject.display = "Patient1"
+* intent = #order
+* orderDetail[+] = SCT#288442008
+
+
+Instance: MyReferralKO
 InstanceOf: MyReferral
 
 * status = #active
