@@ -1,0 +1,127 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "my-ig",
+  "url": "http://example.com/fhir/example/ImplementationGuide/my-ig",
+  "version": "1.0.0",
+  "name": "ExampleIG",
+  "title": "HL7 FHIR Implementation Guide: Example IG Release 1 - US Realm | STU1",
+  "status": "active",
+  "date": "2020-02-26",
+  "publisher": "My Organization",
+  "contact": [
+    {
+      "name": "My Organization",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://example.com/committees"
+        },
+        {
+          "system": "email",
+          "value": "my-group@example.com"
+        }
+      ]
+    },
+    {
+      "name": "Bob Smith",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "bobsmith@example.com",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "Example IG exercises many of the fields in a SUSHI configuration.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "001",
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "display": "World"
+        }
+      ]
+    }
+  ],
+  "packageId": "my-ig",
+  "license": "CC0-1.0",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "definition": {
+    "resource": [
+      {
+        "reference": {
+          "reference": "StructureDefinition/MyReferral"
+        },
+        "name": "Additional Bindings Profile",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ServiceRequest/MyReferral1"
+        },
+        "name": "MyReferral1",
+        "exampleCanonical": "http://example.com/fhir/example/StructureDefinition/MyReferral"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/VS1"
+        },
+        "name": "Value Set 1",
+        "description": "Value Set 1.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/VSA"
+        },
+        "name": "Value Set A",
+        "description": "Value Set A.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/VSB"
+        },
+        "name": "Value Set B",
+        "description": "Value Set B.",
+        "exampleBoolean": false
+      }
+    ],
+    "page": {
+      "nameUrl": "toc.html",
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": [
+        {
+          "nameUrl": "index.html",
+          "title": "Home",
+          "generation": "html"
+        },
+        {
+          "nameUrl": "changes.html",
+          "title": "Changes",
+          "generation": "html"
+        },
+        {
+          "nameUrl": "downloads.html",
+          "title": "Downloads",
+          "generation": "html"
+        }
+      ]
+    },
+    "parameter": [
+      {
+        "code": "copyrightyear",
+        "value": "2021+"
+      },
+      {
+        "code": "releaselabel",
+        "value": "STU1"
+      }
+    ]
+  }
+}

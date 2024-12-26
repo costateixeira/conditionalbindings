@@ -1,0 +1,42 @@
+[
+  {
+    "outputFile": "ServiceRequest-MyReferral1.json",
+    "fshName": "MyReferral1",
+    "fshType": "Instance",
+    "fshFile": "test.fsh",
+    "startLine": 74,
+    "endLine": 81
+  },
+  {
+    "outputFile": "StructureDefinition-MyReferral.json",
+    "fshName": "MyReferral",
+    "fshType": "Profile",
+    "fshFile": "test.fsh",
+    "startLine": 6,
+    "endLine": 39
+  },
+  {
+    "outputFile": "ValueSet-VS1.json",
+    "fshName": "VS1",
+    "fshType": "ValueSet",
+    "fshFile": "test.fsh",
+    "startLine": 45,
+    "endLine": 51
+  },
+  {
+    "outputFile": "ValueSet-VSA.json",
+    "fshName": "VSA",
+    "fshType": "ValueSet",
+    "fshFile": "test.fsh",
+    "startLine": 54,
+    "endLine": 61
+  },
+  {
+    "outputFile": "ValueSet-VSB.json",
+    "fshName": "VSB",
+    "fshType": "ValueSet",
+    "fshFile": "test.fsh",
+    "startLine": 65,
+    "endLine": 72
+  }
+]
