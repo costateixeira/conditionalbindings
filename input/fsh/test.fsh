@@ -1,12 +1,12 @@
 Alias: SCT = http://snomed.info/sct
-Alias: $additional-bindings-profile-uc = http://example.com/fhir/example/StructureDefinition/MyReferral
-Alias: $additional-bindings-profile-cs = http://hl7.org/fhir/test/StructureDefinition/additional-bindings-profile-cs
+Alias: $additional-bindings-profile-uc = http://example.com/fhir/example/StructureDefinition/ConditionalReferral
+//Alias: $additional-bindings-profile-uc = Canonical(ConditionalReferral)
 
 
-Profile: MyReferral
+Profile: ConditionalReferral
 Parent: ServiceRequest
-Id: MyReferral
-Title: "Additional Bindings Profile"
+Id: ConditionalReferral
+Title: "Conditional Referral profile with Additional Bindings"
 * ^version = "1.0.0"
 * ^status = #draft
 * code from VS1
@@ -70,8 +70,8 @@ Description: "Value Set B."
 * SCT#46669005  "Right handed (finding)"
 * SCT#23088002  "Ambidextrous (finding)"
 
-Instance: MyReferralOK1
-InstanceOf: MyReferral
+Instance: ExampleReferralOK1
+InstanceOf: ConditionalReferral
 
 * status = #active
 * code = SCT#364940007
@@ -81,8 +81,8 @@ InstanceOf: MyReferral
 
 
 
-Instance: MyReferralOK2
-InstanceOf: MyReferral
+Instance: ExampleReferralOK2
+InstanceOf: ConditionalReferral
 
 * status = #active
 * code = SCT#365176002
@@ -91,11 +91,12 @@ InstanceOf: MyReferral
 * orderDetail[+] = SCT#288442008
 
 
-Instance: MyReferralKO
-InstanceOf: MyReferral
+Instance: ExampleReferralKO
+InstanceOf: ConditionalReferral
 
 * status = #active
 * code = SCT#365176002
 * subject.display = "Patient1"
 * intent = #order
 * orderDetail[+] = SCT#23088002
+

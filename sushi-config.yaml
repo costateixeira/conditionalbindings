@@ -11,8 +11,8 @@ id: my-ig
 canonical: http://example.com/fhir/example
 url: http://example.com/fhir/example/ImplementationGuide/my-ig
 name: ExampleIG
-title: "HL7 FHIR Implementation Guide: Example IG Release 1 - US Realm | STU1"
-description: Example IG exercises many of the fields in a SUSHI configuration.
+title: "Conditional bindings"
+description: Demonstration of conditional bindings.
 status: active
 license: CC0-1.0
 date: 2020-02-26
@@ -129,11 +129,13 @@ jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"
 # with supported extensions (e.g., .md/.xml) will be treated as
 # sub-pages.
 pages:
-  index.xml:
+  index.md:
     title: Home
+  functional.md:
+    title: Business and functional purpose
+  technical.md:
+    title: Technical Implementation
 #  guidance.md:
-  changes.xml:
-  downloads.xml:
 # The ImplementationGuide resource defines several other properties
 # not represented above. These properties can be used as-is and
 # should follow the format defined in ImplementationGuide:
@@ -159,8 +161,6 @@ menu:
   Home: index.html
 #  Guidance: guidance.html
   Artifacts: artifacts.html
-  Downloads: downloads.html
-  Changes: changes.html
 #  History: ../history.html
 
 # The parameters property represents IG.definition.parameter. Rather
