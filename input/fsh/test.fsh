@@ -1,6 +1,4 @@
 Alias: SCT = http://snomed.info/sct
-Alias: $additional-bindings-profile-uc = http://example.com/fhir/example/StructureDefinition/ConditionalReferral
-//Alias: $additional-bindings-profile-uc = Canonical(ConditionalReferral)
 
 
 Profile: ConditionalReferral
@@ -12,20 +10,14 @@ Title: "Conditional Referral profile with Additional Bindings"
 * code from VS1
 * orderDetail
 
-
-///// Unused
-/// Extensions: ?
-//http://hl7.org/fhir/5.0/StructureDefinition/extension-ElementDefinition.binding.additional
-/// Aliases:
-
-
   * ^binding.extension[+].url = "http://hl7.org/fhir/tools/StructureDefinition/additional-binding"
   * ^binding.extension[=].extension[+].url = "purpose"
   * ^binding.extension[=].extension[=].valueCode = #required
   * ^binding.extension[=].extension[+].url = "valueSet"
   * ^binding.extension[=].extension[=].valueCanonical = Canonical(VSA)
   * ^binding.extension[=].extension[+].url = "usage"
-  * ^binding.extension[=].extension[=].valueUsageContext.code = $additional-bindings-profile-uc#ServiceRequest.code
+  * ^binding.extension[=].extension[=].valueUsageContext.code.system = Canonical(ConditionalReferral)
+  * ^binding.extension[=].extension[=].valueUsageContext.code.code = #ServiceRequest.code
   * ^binding.extension[=].extension[=].valueUsageContext.valueCodeableConcept = SCT#365176002
 
   * ^binding.extension[+].url = "http://hl7.org/fhir/tools/StructureDefinition/additional-binding"
@@ -34,7 +26,8 @@ Title: "Conditional Referral profile with Additional Bindings"
   * ^binding.extension[=].extension[+].url = "valueSet"
   * ^binding.extension[=].extension[=].valueCanonical = Canonical(VSB)
   * ^binding.extension[=].extension[+].url = "usage"
-  * ^binding.extension[=].extension[=].valueUsageContext.code = $additional-bindings-profile-uc#ServiceRequest.code
+  * ^binding.extension[=].extension[=].valueUsageContext.code.system = Canonical(ConditionalReferral)
+  * ^binding.extension[=].extension[=].valueUsageContext.code.code = #ServiceRequest.code
   * ^binding.extension[=].extension[=].valueUsageContext.valueCodeableConcept = SCT#364940007
 
 
