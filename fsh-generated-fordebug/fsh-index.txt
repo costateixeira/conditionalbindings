@@ -1,6 +1,0 @@
-Output File                          Name         Type      FSH File  Lines
-ServiceRequest-MyReferral1.json      MyReferral1  Instance  test.fsh  74 - 81
-StructureDefinition-MyReferral.json  MyReferral   Profile   test.fsh  6 - 39
-ValueSet-VS1.json                    VS1          ValueSet  test.fsh  45 - 51
-ValueSet-VSA.json                    VSA          ValueSet  test.fsh  54 - 61
-ValueSet-VSB.json                    VSB          ValueSet  test.fsh  65 - 72
