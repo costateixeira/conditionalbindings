@@ -1,0 +1,38 @@
+ExampleIG : Validation Results
+=========================================
+
+err = 1, warn = 12, info = 0
+IG Publisher Version: 1.8.4
+Generated Fri Jan 03 11:42:50 UTC 2025. FHIR version 4.0.1 for my-ig#1.0.0 (canonical = http://example.com/fhir/example)
+ Build Errors : 0 / 9 / 0
+ /github/workspace/fsh-generated/resources/ImplementationGuide-my-ig : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ServiceRequest-ExampleReferralKO : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/ServiceRequest-ExampleReferralOK1 : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ServiceRequest-ExampleReferralOK2 : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-ConditionalReferral : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-VS1 : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-VSA : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-VSB : 0 / 1 / 1
+</table>
+== n/a ==
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/ConditionalReferral.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ServiceRequest/ExampleReferralKO.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ServiceRequest/ExampleReferralOK1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ServiceRequest/ExampleReferralOK2.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+WARNING: IG: The IG is not for the international realm, and it uses SNOMED CT, so it should fix the SCT edition in the expansion parameters
+== fsh-generated/resources/ImplementationGuide-my-ig.json ==
+== fsh-generated/resources/ServiceRequest-ExampleReferralKO.json ==
+ERROR: ServiceRequest/ExampleReferralKO: ServiceRequest.orderDetail[0]: None of the codings provided are in the value set 'Value Set A' (http://example.com/fhir/example/ValueSet/VSA|1.0.0) specified in an additional binding which applies because ServiceRequest.code = 365176002, and a coding from this value set is required) (codes = http://snomed.info/sct#23088002)
+== fsh-generated/resources/ServiceRequest-ExampleReferralOK1.json ==
+== fsh-generated/resources/ServiceRequest-ExampleReferralOK2.json ==
+== fsh-generated/resources/StructureDefinition-ConditionalReferral.json ==
+== fsh-generated/resources/ValueSet-VS1.json ==
+WARNING: ValueSet/VS1: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+== fsh-generated/resources/ValueSet-VSA.json ==
+WARNING: ValueSet/VSA: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+== fsh-generated/resources/ValueSet-VSB.json ==
+WARNING: ValueSet/VSB: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present

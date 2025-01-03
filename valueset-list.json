@@ -1,0 +1,31 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://example.com/fhir/example/ValueSet/VS1",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "VS1",
+      "title" : "Value Set 1",
+      "description" : "Value Set 1.",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://example.com/fhir/example/ValueSet/VSA",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "VSA",
+      "title" : "Value Set A",
+      "description" : "Value Set A.",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://example.com/fhir/example/ValueSet/VSB",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "VSB",
+      "title" : "Value Set B",
+      "description" : "Value Set B.",
+      "systems" : ["http://snomed.info/sct"]
+    }
+  ]
+}

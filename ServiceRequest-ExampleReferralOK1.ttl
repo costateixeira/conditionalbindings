@@ -1,0 +1,43 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.com/fhir/example/ServiceRequest/ExampleReferralOK1> a fhir:ServiceRequest ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ExampleReferralOK1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://example.com/fhir/example/StructureDefinition/ConditionalReferral"^^xsd:anyURI ;
+       fhir:link <http://example.com/fhir/example/StructureDefinition/ConditionalReferral>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ServiceRequest ExampleReferralOK1</b></p><a name=\"ExampleReferralOK1\"> </a><a name=\"hcExampleReferralOK1\"> </a><a name=\"ExampleReferralOK1-en-US\"> </a><p><b>status</b>: Active</p><p><b>intent</b>: Order</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 364940007}\">Handedness finding</span></p><p><b>orderDetail</b>: <span title=\"Codes:{http://snomed.info/sct 23088002}\">Ambidextrous</span></p><p><b>subject</b>: Patient1</p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:intent [ fhir:v "order"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:364940007 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "364940007" ]
+     ] )
+  ] ; # 
+  fhir:orderDetail ( [
+     fhir:coding ( [
+       a sct:23088002 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "23088002" ]
+     ] )
+  ] ) ; # 
+  fhir:subject [
+     fhir:display [ fhir:v "Patient1" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

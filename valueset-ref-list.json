@@ -1,0 +1,54 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://example.com/fhir/example/ValueSet/VS1",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "VS1",
+      "title" : "Value Set 1",
+      "description" : "Value Set 1.",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-ConditionalReferral.html" : "Conditional Referral profile with Additional Bindings"
+    },
+    {
+      "url" : "http://example.com/fhir/example/ValueSet/VSA",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "VSA",
+      "title" : "Value Set A",
+      "description" : "Value Set A.",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-ConditionalReferral.html" : "Conditional Referral profile with Additional Bindings"
+    },
+    {
+      "url" : "http://example.com/fhir/example/ValueSet/VSB",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "VSB",
+      "title" : "Value Set B",
+      "description" : "Value Set B.",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-ConditionalReferral.html" : "Conditional Referral profile with Additional Bindings"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/servicerequest-orderdetail",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ServiceRequestOrderDetailsCodes",
+      "title" : "Service Request Order Details Codes",
+      "description" : "An example value set of Codified order entry details concepts.  These concepts only make sense in the context of what is being ordered.  This example is for a patient ventilation order",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.435"],
+      "sources" : ["2.16.840.1.113883.4.642.3.435"],
+      "uses" : {
+      },
+      "StructureDefinition-ConditionalReferral.html" : "Conditional Referral profile with Additional Bindings"
+    }
+  ]
+}

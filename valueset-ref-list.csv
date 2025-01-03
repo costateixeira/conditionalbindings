@@ -1,0 +1,5 @@
+URL,Version,Status,OIDs,Name,Title,Descriptino,Uses,Used,Sources
+http://example.com/fhir/example/ValueSet/VS1,1.0.0,active,,VS1,Value Set 1,"Value Set 1.","StructureDefinition/ConditionalReferral","SCT"
+http://example.com/fhir/example/ValueSet/VSA,1.0.0,active,,VSA,Value Set A,"Value Set A.","StructureDefinition/ConditionalReferral","SCT"
+http://example.com/fhir/example/ValueSet/VSB,1.0.0,active,,VSB,Value Set B,"Value Set B.","StructureDefinition/ConditionalReferral","SCT"
+http://hl7.org/fhir/ValueSet/servicerequest-orderdetail,4.0.1,draft,"2.16.840.1.113883.4.642.3.435",ServiceRequestOrderDetailsCodes,Service Request Order Details Codes,"An example value set of Codified order entry details concepts.  These concepts only make sense in the context of what is being ordered.  This example is for a patient ventilation order","StructureDefinition/ConditionalReferral","SCT"

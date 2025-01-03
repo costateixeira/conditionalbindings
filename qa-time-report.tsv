@@ -1,0 +1,9 @@
+Source File	Size	loadResources	load-configure	scan	loadDepInfo	loadInfo	load	generateSnapshots	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
+/fsh-generated/resources/ImplementationGuide-my-ig.json	3414	-	0	0	0	0	0	0	5	242	0	0	0	0	0	0	0	0	0	0	95	61	0	0	0	5	0	1
+fsh-generated/resources/ServiceRequest-ExampleReferralKO.json	561	12	0	0	0	0	0	0	1	276	0	0	0	0	0	0	0	0	0	0	41	18	0	0	0	0	0	0
+fsh-generated/resources/ServiceRequest-ExampleReferralOK1.json	562	12	0	0	0	0	0	0	0	109	0	0	0	0	0	0	0	0	0	0	11	8	0	0	0	0	0	0
+fsh-generated/resources/ServiceRequest-ExampleReferralOK2.json	563	9	0	0	0	0	0	0	0	109	0	0	0	0	0	0	0	0	0	0	12	7	0	0	0	0	0	0
+fsh-generated/resources/StructureDefinition-ConditionalReferral.json	3333	10	0	0	1	1	0	60	0	157	0	0	0	0	0	0	0	2	0	0	327	2133	0	0	0	15	0	1
+fsh-generated/resources/ValueSet-VS1.json	737	9	0	0	0	0	0	0	0	185	0	0	0	0	0	0	0	0	0	0	47	5125	0	0	0	1	0	0
+fsh-generated/resources/ValueSet-VSA.json	794	9	0	0	0	0	0	0	1	115	0	0	0	0	0	0	0	0	0	0	20	219	0	0	0	1	0	0
+fsh-generated/resources/ValueSet-VSB.json	937	11	0	0	0	0	0	0	0	118	0	0	0	0	0	0	0	0	0	0	21	230	0	0	0	0	0	0

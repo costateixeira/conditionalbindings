@@ -1,0 +1,37 @@
+[
+  {
+    "id" : "my-ig",
+    "type" : "ImplementationGuide",
+    "url" : "http://example.com/fhir/example/ImplementationGuide/my-ig",
+    "version" : "1.0.0",
+    "name" : "ExampleIG"
+  },
+  {
+    "id" : "ConditionalReferral",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/example/StructureDefinition/ConditionalReferral",
+    "version" : "1.0.0",
+    "name" : "ConditionalReferral"
+  },
+  {
+    "id" : "VS1",
+    "type" : "ValueSet",
+    "url" : "http://example.com/fhir/example/ValueSet/VS1",
+    "version" : "1.0.0",
+    "name" : "VS1"
+  },
+  {
+    "id" : "VSA",
+    "type" : "ValueSet",
+    "url" : "http://example.com/fhir/example/ValueSet/VSA",
+    "version" : "1.0.0",
+    "name" : "VSA"
+  },
+  {
+    "id" : "VSB",
+    "type" : "ValueSet",
+    "url" : "http://example.com/fhir/example/ValueSet/VSB",
+    "version" : "1.0.0",
+    "name" : "VSB"
+  }
+]
