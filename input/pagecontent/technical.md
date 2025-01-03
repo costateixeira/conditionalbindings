@@ -23,3 +23,4 @@ The validation is visible in the valid instances [example 1](ServiceRequest-Exam
 ### How to define conditional additional bindings
 
 ...
+See the [artifacts](artifacts.html) in this Implementation Guide, namely the [ConditionalReferral profile](StructureDefinition-ConditionalReferral.html).
