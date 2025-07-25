@@ -1,0 +1,219 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "9ea34abc-2293-4ddd-880e-1736bc4d2b90",
+  "meta" : {
+    "lastUpdated" : "2025-07-25T19:59:36.535+00:00"
+  },
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "http://example.com/fhir/example/ValueSet/VS1",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025</p><p>This value set contains 2 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-365176002\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/365176002\">365176002</a></td><td>http://snomed.info/sct</td><td>Finding related to ability to perform writing activities</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-364940007\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/364940007\">364940007</a></td><td>http://snomed.info/sct</td><td>Handedness finding</td></tr></table></div>"
+      },
+      "url" : "http://example.com/fhir/example/ValueSet/VS1",
+      "version" : "1.0.0",
+      "name" : "VS1",
+      "title" : "Value Set 1",
+      "status" : "active",
+      "date" : "2025-07-25T19:58:49+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001",
+          "display" : "World"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:c48f63e5-66fd-4eb9-984a-9f7fb8faf850",
+        "timestamp" : "2025-07-25T20:00:01+00:00",
+        "total" : 2,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en-US"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "null"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
+        }],
+        "contains" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "365176002",
+          "display" : "Finding related to ability to perform writing activities"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "364940007",
+          "display" : "Handedness finding"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://example.com/fhir/example/ValueSet/VSA",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025</p><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-288442008\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/288442008\">288442008</a></td><td>http://snomed.info/sct</td><td>Able to perform writing activities</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-288446006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/288446006\">288446006</a></td><td>http://snomed.info/sct</td><td>Difficulty performing writing activities</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-288445005\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/288445005\">288445005</a></td><td>http://snomed.info/sct</td><td>Does not perform writing activities</td></tr></table></div>"
+      },
+      "url" : "http://example.com/fhir/example/ValueSet/VSA",
+      "version" : "1.0.0",
+      "name" : "VSA",
+      "title" : "Value Set A",
+      "status" : "active",
+      "date" : "2025-07-25T19:58:49+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001",
+          "display" : "World"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:d64c8191-47ef-4d6f-b9e0-cefc6bf959da",
+        "timestamp" : "2025-07-25T20:00:01+00:00",
+        "total" : 3,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en-US"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "null"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
+        }],
+        "contains" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "288442008",
+          "display" : "Able to perform writing activities"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "288446006",
+          "display" : "Difficulty performing writing activities"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "288445005",
+          "display" : "Does not perform writing activities"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://example.com/fhir/example/ValueSet/VSB",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025</p><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-87683000\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/87683000\">87683000</a></td><td>http://snomed.info/sct</td><td>Left handed</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-46669005\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/46669005\">46669005</a></td><td>http://snomed.info/sct</td><td>Right handed</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-23088002\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/23088002\">23088002</a></td><td>http://snomed.info/sct</td><td>Ambidextrous</td></tr></table></div>"
+      },
+      "url" : "http://example.com/fhir/example/ValueSet/VSB",
+      "version" : "1.0.0",
+      "name" : "VSB",
+      "title" : "Value Set B",
+      "status" : "active",
+      "date" : "2025-07-25T19:58:49+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001",
+          "display" : "World"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:61839b14-e018-43ac-ac3b-45ef51a38c14",
+        "timestamp" : "2025-07-25T20:00:02+00:00",
+        "total" : 3,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en-US"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "null"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
+        }],
+        "contains" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "87683000",
+          "display" : "Left handed"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "46669005",
+          "display" : "Right handed"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "23088002",
+          "display" : "Ambidextrous"
+        }]
+      }
+    }
+  }]
+}

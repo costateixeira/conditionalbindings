@@ -1,0 +1,23 @@
+ExampleIG
+=========================================
+
+Generic: line 0, col 0, Warning - Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/ConditionalReferral.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list. (INVARIANT)
+Generic: line 0, col 0, Warning - Unable to find ImplementationGuide.definition.resource.description for the resource ServiceRequest/ExampleReferralKO.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list. (INVARIANT)
+Generic: line 0, col 0, Warning - Unable to find ImplementationGuide.definition.resource.description for the resource ServiceRequest/ExampleReferralOK1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list. (INVARIANT)
+Generic: line 0, col 0, Warning - Unable to find ImplementationGuide.definition.resource.description for the resource ServiceRequest/ExampleReferralOK2.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list. (INVARIANT)
+Generic: line 0, col 0, Warning - The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide (NOTFOUND)
+Generic: line 0, col 0, Warning - An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide (NOTFOUND)
+Generic: line 0, col 0, Warning - An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide (NOTFOUND)
+Generic: line 0, col 0, Warning - The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide (NOTFOUND)
+/work/fsh-generated/resources/ServiceRequest-ExampleReferralKO.json: line 23, col 6, Error - None of the codings provided are in the value set 'Value Set A' (http://example.com/fhir/example/ValueSet/VSA|1.0.0) specified in an additional binding which applies because ServiceRequest.code = 365176002, and a coding from this value set is required) (codes = http://snomed.info/sct#23088002) (CODEINVALID)
+/work/fsh-generated/resources/StructureDefinition-ConditionalReferral.json: line 1, col 22126, Info - The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated (BUSINESSRULE)
+/work/fsh-generated/resources/StructureDefinition-ConditionalReferral.json: line 1, col 46247, Warning - Constraint failed: ext-ab-1: 'Additional Bindings SHOULD have a key to allow a binding to be constrained.' (INVARIANT)
+/work/fsh-generated/resources/StructureDefinition-ConditionalReferral.json: line 1, col 46710, Warning - Constraint failed: ext-ab-1: 'Additional Bindings SHOULD have a key to allow a binding to be constrained.' (INVARIANT)
+/work/fsh-generated/resources/StructureDefinition-ConditionalReferral.json: line 1, col 72509, Warning - Constraint failed: ext-ab-1: 'Additional Bindings SHOULD have a key to allow a binding to be constrained.' (INVARIANT)
+/work/fsh-generated/resources/StructureDefinition-ConditionalReferral.json: line 1, col 72972, Warning - Constraint failed: ext-ab-1: 'Additional Bindings SHOULD have a key to allow a binding to be constrained.' (INVARIANT)
+/work/fsh-generated/resources/ValueSet-VS1.json: line 1, col 1761, Warning - Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present (REQUIRED)
+/work/fsh-generated/resources/ValueSet-VSA.json: line 1, col 1926, Warning - Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present (REQUIRED)
+/work/fsh-generated/resources/ValueSet-VSB.json: line 1, col 1902, Warning - Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present (REQUIRED)
+
+err = 1, warn = 15, info = 1
+IG Publisher Version: 2.0.11
